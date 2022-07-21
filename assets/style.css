@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body
+{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('/images/background.jfif');
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+/*              HEADER SECTION           */
+
+header
+{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+header ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    padding-right: 11rem;
+}
+
+header .logo
+{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 70px;
+}
+
+header ul li a{
+    font-size: 18px;
+    padding: 8px 20px;
+    margin: 0 6px;
+    color: #fff;
+}
+
+header ul li a:hover
+{
+    color: #f2d280;
+}
+
+header .logo h1
+{
+    font-size: 45px;
+    color: #e8c573 ;
+}
+
+header .logo h1 span
+{
+    font-size: 25px;
+    color: #f2d280;
+}
+
+header .logo img{
+    width: 60px;
+    margin-right: -7px;
+}
+
+/*              MAIN SECTION           */
+
+.main
+{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.main-one
+{
+    width: 60%;
+    height: 100%;
+    padding: 220px 0 0 100px;
+}
+
+.main-two
+{
+    width: 40%;
+    height: 100%;
+}
+
+.main-one .title
+{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 34px;
+    color: rgba(255, 255, 255, 0.899);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.main-one h1
+{
+    font-weight: 900;
+    font-style: italic;
+    font-size: 90px;
+    color: #f2d280;
+}
+
+.main-one .subtitle
+{
+    font-family: 'Courier New', Courier, monospace ;
+    font-family: 'Gill Sans', 'Gill Sans MT' ;
+    font-weight: 600;
+    color: #ffd778;
+    font-size: 24px;
+}
+
+.main-one button
+{
+    font-weight: 500;
+    border: 1px solid #f2d280;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 24px;
+    padding: 7px 25px;
+    border-radius: 25px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.main-one button:hover
+{
+    background: linear-gradient(#e5d6b2 , #e8c573) ;
+    border: 3px solid #544115;
+    color: black;
+}
+
+.main-one .underline
+{
+    height: 1px;
+    width: 6%;
+    margin-top: 40px;
+    background-color: #e8c573;
+}
+
+.main-one p
+{
+    color: rgba(245,245 ,245 ,0.803 );
+    width: 80%;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+/*              SUB IMAGES SECTION           */
+
+.subimage
+{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50% ,-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.subimage img
+{
+    width: 80px;
+    cursor: pointer;
+    margin: 18px 0;
+}
+
+.main-two img
+{
+    width: 250px;
+    transition: all 0.5s ease;
+    position: relative;
+    left: 50px;
+    top: 30px;
+}
+
+.subimage img:hover
+{
+    transform: translateY(-5px);
+}

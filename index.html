@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PRODUCT LANDING PAGE | CODE WITH OD</title>
+
+	<!-- ADDED CSS FILE -->
+	<link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<img src="" alt="">
+				<h1>Watch<span>es</span></h1>
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Producs</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+
+		<div class="main">
+			<div class="main-one">
+				<span class="title">New Collections</span>
+				<h1>Luxury Watch</h1>
+				<span class="subtitle">Best Product Even in Section</span>
+				<div class="underline"></div>
+				<p>
+					I had been longing for a watch that was different and my parents gifted me with the best model. I
+					like it very much and when I don't use them, I could round the strap and keep it safely in my
+					cupboard. I need not worry about the durability of the strap of the watch as it is plastic and
+					flexible. It is easy to mange and for students of my age, is very useful. 
+				</p>
+				<button> Shop now</button>
+			</div>
+			<div class="main-two">
+				<img class="image" src="./images/watch1.png" alt="image">
+			</div>
+		</div>
+		<div class="subimage">
+			<img src="./images/watch2.png" alt="watch2" onclick="imgChange('./images/watch2.png')">
+			<img src="./images/watch3.png" alt="watch3" onclick="imgChange('./images/watch3.png')">
+			<img src="./images/watch4.png" alt="watch4" onclick="imgChange('./images/watch4.png')">
+		</div>
+	</div>
+
+	<!-- JAVASCRIPT  -->
+	<script>
+		function imgChange (el){
+			document.querySelector('.image').src = el;
+		}
+	</script>
+</body>
+
+</html>
